@@ -137,7 +137,6 @@ public class PetProvider extends ContentProvider {
         final int match = sUriMatcher.match(uri);
         switch (match) {
             case PETS:
-
                 return updatePet(uri, contentValues, selection, selectionArgs);
             case PET_ID:
                 // For the PET_ID code, extract out the ID from the URI,
